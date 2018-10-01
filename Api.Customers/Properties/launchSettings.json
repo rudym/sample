@@ -1,0 +1,30 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:58063",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "version",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+			"ModelBindingTemplate": {
+				"commandName": "Project",
+				"launchBrowser": true,
+				"launchUrl": "version",
+				"applicationUrl": "http://localhost:5000",
+				"environmentVariables": {
+					"ASPNETCORE_ENVIRONMENT": "Development"
+				}
+			}
+  }
+}

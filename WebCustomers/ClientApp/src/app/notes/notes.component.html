@@ -1,0 +1,12 @@
+<h4>Notes for customer: {{entityId}}</h4>
+
+<p *ngIf="!notes"><em>Loading...</em></p>
+
+<p *ngIf="notes">
+  <ng2-smart-table [settings]="settings"
+                   [source]="notes"
+                   (deleteConfirm)="onDeleteConfirm($event)"
+                   (editConfirm)="onSaveConfirm($event)"
+                   (createConfirm)="onCreateConfirm($event)">
+  </ng2-smart-table>
+</p>

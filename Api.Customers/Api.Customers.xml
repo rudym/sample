@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.Customers</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Customers.Controllers.CustomersController.Get">
+            <summary>
+                Returns list of customers.
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.CustomersController.Get(System.String)">
+            <summary>
+                Returns Customer record using its code.
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.CustomersController.Post(Api.Customers.Models.Customer)">
+            <summary>
+                Creates customer record.
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.CustomersController.Put(System.String,Api.Customers.Models.Customer)">
+            <summary>
+                Updates customer record.
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.CustomersController.Delete(System.String)">
+            <summary>
+                Deletes customer record.
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.NotesController.Get(System.String)">
+            <summary>
+                Returns list of Notes by EntityId (eg. all notes for specific customer).
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.NotesController.Get(System.String,System.String)">
+            <summary>
+                Returns Note record using its EntityId (eg. CustomerId) and its Note Id.
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.NotesController.Post(Api.Customers.Models.Note)">
+            <summary>
+                Creates Note record.
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.NotesController.Put(System.String,System.String,Api.Customers.Models.Note)">
+            <summary>
+                Updates Note record.
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.NotesController.Delete(System.String,System.String)">
+            <summary>
+                Deletes Note record.
+            </summary>
+        </member>
+        <member name="M:Api.Customers.Controllers.VersionController.GetVersion">
+            <summary>
+                Returns the current deployed version of the search assembly
+            </summary>
+            <returns>a string with the deployed version number</returns>
+        </member>
+    </members>
+</doc>

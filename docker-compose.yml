@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  api-customers:
+    build: .
+    environment:
+      - ApplicationInsights__InstrumentationKey={}
+      - AzureTableSettings__StorageAccount={}
+      - AzureTableSettings__StorageKey={}
+      - AzureTableSettings__TableName={}
+    ports:
+      - 4001:80

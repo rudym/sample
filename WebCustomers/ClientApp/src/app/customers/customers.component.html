@@ -1,0 +1,15 @@
+<h1>Customers</h1>
+
+<p *ngIf="!customers"><em>Loading...</em></p>
+
+<p *ngIf="customers">
+  Please, click on customer to manage his notes..
+  <ng2-smart-table [settings]="settings"
+                   [source]="customers"
+                   (deleteConfirm)="onDeleteConfirm($event)"
+                   (editConfirm)="onSaveConfirm($event)"
+                   (createConfirm)="onCreateConfirm($event)"
+                   (userRowSelect)="rowClicked($event)">
+  </ng2-smart-table>
+  <app-notes [entityId]="entityId"></app-notes>
+</p>
